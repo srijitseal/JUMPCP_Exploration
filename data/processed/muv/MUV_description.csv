@@ -1,0 +1,23 @@
+Notes:
+
+https://pubs.acs.org/doi/full/10.1021/ci8002649
+
+target	mode of interaction	target class	prim. assay (AID)	confirm. assay (AID)	assay-type	Hill slope	PA	PD
+S1P1 rec.	agonists	GPCR	449	466	reporter gene	PubChem	223a	55395
+PKA	inhibitors	kinase	524	548	enzyme	PubChem	62	64814
+SF1	inhibitors	nuclear receptor	525	600	reporter gene	PubChem	213	64550
+Rho-Kinase2	inhibitors	kinase	604	644	enzyme	PubChem	67	59576
+HIV RT-RNase	inhibitors	RNase	565	652	enzyme	PubChem	370	63969
+Eph rec. A4	inhibitors	rec. tyr. kinase	689	689b	enzyme	PubChem	80	61480
+SF1	agonists	nuclear receptor	522	692	reporter gene	PubChem	75	63683
+HSP 90	inhibitors	chaperone	429	712	enzyme	calculated	91	63481
+ER-a-coact. bind.	inhibitors	PPIc	629	713	enzyme	calculated	221	84656
+ER-β-coact. bind.	inhibitors	PPIc	633	733	enzyme	calculated	194	84984
+ER-a-coact. bind.	potentiators	PPIc	639	737	enzyme	not applicabled	64	84947
+FAK	inhibitors	kinase	727	810	enzyme	PubChem	110	96070
+Cathepsin G	inhibitors	protease	581	832	enzyme	PubChem	65	62007
+FXIa	inhibitors	protease	798	846	enzyme	PubChem	70	218421
+S1P2 rec.	inhibitors	GPCR	736	851	reporter gene	PubChem	54	96674
+FXIIa	inhibitors	protease	800	852	enzyme	PubChem	99	216795
+D1 rec.	allosteric modulators	GPCR	641	858	reporter gene	PubChem	226	54292
+M1 rec.	allosteric inhibitors	GPCR	628	859	reporter gene	PubChem	231	61477
