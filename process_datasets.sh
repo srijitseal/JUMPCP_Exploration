@@ -1,8 +1,11 @@
 #!/bin/bash
 
-datasets=("bace" "BBBP" "clintox" "HIV" "MUV" "sider" "tox21" "toxcast")
+datasets=("clintox" "bace" "BBBP" "HIV" "muv" "sider" "tox21" "toxcast" "JUMPCP_compounds")
 
 for dataset in "${datasets[@]}"; do
+     
+    echo ${dataset}
+    
     if [[ -e "data/raw/${dataset}/${dataset}.csv" ]]; then
         file_format="csv"
     elif [[ -e "data/raw/${dataset}/${dataset}.csv.gz" ]]; then
@@ -14,6 +17,6 @@ for dataset in "${datasets[@]}"; do
     
     python 01_standardise_smiles/01_process_raw_datasets.py \
            --raw_path "data/raw/${dataset}/${dataset}.${file_format}" \
-           --save_path "data/processed/${dataset}/${dataset}_processed.csv" \
+           --save_path "data/processed/${dataset}/${dataset}_processed.csv.gz" \
            --smiles_variable 'smiles'
 done
