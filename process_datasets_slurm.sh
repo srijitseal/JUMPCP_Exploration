@@ -18,7 +18,8 @@
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate my-rdkit-env
 
-datasets=("clintox" "bace" "BBBP" "HIV" "muv" "sider" "tox21" "toxcast" "JUMPCP_compounds")
+#datasets=("clintox" "bace" "BBBP" "HIV" "muv" "sider" "tox21" "toxcast" "JUMPCP_compounds")
+datasets=("DILIst" "PK_Lombardo")
 
 for dataset in "${datasets[@]}"; do
      
