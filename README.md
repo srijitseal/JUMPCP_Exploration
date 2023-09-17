@@ -2,24 +2,25 @@
 Welcome to the repository dedicated to exploring the chemical space of the JUMPCP dataset and further data processing. Here, you'll find a collection of Jupyter Notebooks, scripts, raw and processed datasets essential for the detailed investigation of JUMPCP compounds.
 
 Repository Structure:
-01_standardise_smiles: Contains the tools for standardizing the SMILES notation of compounds.
+Folder: 01_standardise_smiles: Contains the tools for standardizing the SMILES notation of compounds.
     
     01_process_raw_datasets.py: Python script to process raw datasets and smiles standardisation.
     02_Explore_Datasets.ipynb: Jupyter Notebook for dataset exploration.
-02_Explore_JUMP_compounds: Houses the notebooks and data files for exploring the JUMPCP compounds.
 
-  01_DrugSpace_Exploration.ipynb: Explore the drug space of the dataset.
-  02_Explore_Chemical_Space_PCA_TSNE.ipynb: Investigate the chemical space via PCA and t-SNE methods.
-  03_Find_Overlaps_with_data_JUMPCP_and_save_datasets.ipynb: Find overlaps in data and save datasets.
+Folder: 02_Explore_JUMP_compounds: Houses the notebooks and data files for exploring the JUMPCP compounds.
 
-03_splitting_data: This section helps in data stratification.
+    01_DrugSpace_Exploration.ipynb: Explore the drug space of the dataset.
+      02_Explore_Chemical_Space_PCA_TSNE.ipynb: Investigate the chemical space via PCA and t-SNE methods.
+      03_Find_Overlaps_with_data_JUMPCP_and_save_datasets.ipynb: Find overlaps in data and save datasets.
 
-  01_data_splitting.py: Main script for splitting data.
+Folder: 03_splitting_data: This section helps in data stratification.
+
+      01_data_splitting.py: Main script for splitting data.
  
-scripts: Utility scripts for data processing.
+Folder: scripts: Utility scripts for data processing.
 
-  stratified_split_helper.py: Helps in stratifying the splits.
-  standardise_smiles.py: Standardizes the SMILES notation.
+      stratified_split_helper.py: Helps in stratifying the splits.
+      standardise_smiles.py: Standardizes the SMILES notation.
 
 data: A comprehensive data directory with raw, processed, overlapping, and split datasets from various sources like JUMPCP, BBBP, sider, tox21, muv, HIV, and more. This directory also contains notebooks for specific datasets.
 
