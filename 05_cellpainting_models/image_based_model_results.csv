@@ -1,0 +1,2 @@
+,CV_AUC_mean,CV_AUC_std,Held_out_AUC,Held_out_AUCPR,Held_out_BA,Held_out_FN,Held_out_FP,Held_out_MCC,Held_out_Sensitivity,Held_out_Specificity,Held_out_TN,Held_out_TP
+BSK_BE3C_IL1a_down,0.49043478260869566,0.13601515776893489,0.3954802259887006,0.1478376180931587,0.5,12.0,0.0,0.0,0.0,1.0,59.0,0.0
