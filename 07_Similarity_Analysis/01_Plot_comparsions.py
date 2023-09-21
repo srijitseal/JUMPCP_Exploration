@@ -385,11 +385,11 @@ data = []
 # Iterate through the dictionary to extract the data
 for task, activities in results_significance.items():
     for activity, features in activities.items():
-        for features, values in metrics.items():
+        for featureset, values in features.items():
             row = {
                 'dataset': dataset,
                 'activity': activity,
-                'features': features,
+                'featureset': featureset,
                 't-statistic': values['t-statistic'],
                 'p-value': values['p-value']
             }
@@ -407,7 +407,7 @@ for features in ['structural', 'image']:
     plt.figure(figsize=(8, 6), dpi=300) 
     sns.set(style="white")  # Set the style
     
-    subset = df[df['features'] == features]
+    subset = df[df['featureset'] == features]
     
     plt.figure(figsize=(10, 6))
     sns.scatterplot(data=subset, x='t-statistic', y='p-value', hue='metric', palette='tab10', style='metric', s=100)
@@ -416,6 +416,6 @@ for features in ['structural', 'image']:
     plt.grid(True, which="both", ls="--", c='0.65')
     plt.axhline(y=0.05, color='r', linestyle='-')
     #plt.legend()
-    plt.savefig(f'{features}_barplot_comparison.png', bbox_inches='tight')
+    plt.savefig(f'{featureset}_barplot_comparison.png', bbox_inches='tight')
     plt.show()
            
