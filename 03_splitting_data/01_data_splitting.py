@@ -12,7 +12,7 @@ import pickle
 
 # Loading the dictionary
 
-pickle_file_path = '../02_Explore_JUMP_compounds/activity_columns_mapping_selected.pkl'
+pickle_file_path = '../02_DrugSpace_and_Overlaps/activity_columns_mapping_selected.pkl'
 
 # Loading the dictionary
 with open(pickle_file_path, 'rb') as file:

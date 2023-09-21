@@ -48,6 +48,9 @@ def generate_fingerprints(smiles_list):
 # Assuming PK dataset is regression and others are classification
 for dataset in os.listdir(data_path):
     
+    # Exclude hidden files or directories like .ipynb_checkpoints
+    if dataset.startswith('.'):
+        continue
     print(dataset)
 
     # Get all the file names for this dataset

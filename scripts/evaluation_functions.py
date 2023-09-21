@@ -6,6 +6,7 @@ from sklearn.metrics import mean_squared_error, roc_auc_score, matthews_corrcoef
 from imblearn.metrics import geometric_mean_score
 from sklearn.metrics import roc_curve
 import math
+import numpy as np
 
 
 def evaluate_classifier(true_labels, predictions, probs):
@@ -24,10 +25,14 @@ def evaluate_classifier(true_labels, predictions, probs):
             'Held_out_Sensitivity': sen}
 
 def fold_error(true_values, predictions, activity):
+    
+    true_values = np.array(true_values)
+    predictions = np.array(predictions)
+    
     if activity != "fraction_unbound_in_plasma_fu":    
         ratio = 10 **predictions / 10 **true_values
         
-    if activity == "fraction_unbound_in_plasma_fu":    
+    else:    
         ratio = predictions / true_values
         
     adjusted_ratio = np.where(ratio < 1, 1/ratio, ratio)

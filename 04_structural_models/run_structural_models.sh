@@ -18,4 +18,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate my-rdkit-env
 
 # Run your Python script
-python ./01_Structural_models_v4.py
+python Structural_models_v4.py
