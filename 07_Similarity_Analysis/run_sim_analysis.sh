@@ -18,4 +18,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate my-rdkit-env
 
 # Run your Python script
-python 01_Plot_comparsions.py
+python 01_Calculate_comparsions_v2.py
