@@ -20,6 +20,7 @@ from sklearn.metrics import roc_curve
 from sklearn.experimental import enable_halving_search_cv
 from sklearn.model_selection import HalvingRandomSearchCV
 from scipy.stats import randint, uniform
+from sklearn.model_selection import StratifiedKFold
 import math
 
 
@@ -152,11 +153,13 @@ for dataset in os.listdir(data_path):
                           'n_jobs': [40],
                           'class_weight' : [None, 'balanced']
                          }
+            inner_cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)   
+            
             classification_search = HalvingRandomSearchCV(
                 model,
                 param_dist_classification,
                 factor=3,
-                cv=5,
+                cv=inner_cv,
                 random_state=42,
                 verbose=1,
                 n_jobs=40,)

@@ -395,20 +395,20 @@ for dataset in os.listdir(data_path):
             # Create a list to hold the rows of the dataframe
 
 
-            # Iterate through the dictionary to extract the data
-            for task, activities in results_significance.items():
-                for activity, features in activities.items():
-                    for featureset, values in features.items():
-                        row = {
-                            'dataset': dataset,
-                            'activity': activity,
-                            'featureset': featureset,
-                            't-statistic': values['t-statistic'],
-                            'p-value': values['p-value']
-                        }
-                        data.append(row)
+# Iterate through the dictionary to extract the data
+for task, activities in results_significance.items():
+    for activity, features in activities.items():
+        for featureset, values in features.items():
+            row = {
+                'dataset': dataset,
+                'activity': activity,
+                'featureset': featureset,
+                't-statistic': values['t-statistic'],
+                'p-value': values['p-value']
+            }
+            data.append(row)
 
-            # Convert the list of rows to a dataframe
-            df = pd.DataFrame(data)
-            df.to_csv("Plot_comparsions_similarityv2.csv", index=False)
+# Convert the list of rows to a dataframe
+df = pd.DataFrame(data)
+df.to_csv("Plot_comparsions_similarityv2.csv", index=False)
 

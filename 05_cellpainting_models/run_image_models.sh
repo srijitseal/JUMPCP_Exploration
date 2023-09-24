@@ -18,4 +18,4 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate my-rdkit-env
 
 # Run your Python script
-python CellPainting_models_v3.py
+python CellPainting_models_v4.py
