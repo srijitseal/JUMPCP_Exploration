@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
-
+import pickle 
 
 from scipy.stats import randint, uniform
 from pandarallel import pandarallel
@@ -256,9 +256,9 @@ for dataset in os.listdir(data_path):
             mean_tanimoto_active_inactive = [result[1] for result in results_fp if result[1] is not None]
 
             # Raincloud plots
-            #pal = "Set2"
-            #sns.set(rc={'figure.figsize':(5,2), "figure.dpi":100}, font_scale=1)
-            #sns.set_style("white")
+            pal = "Set2"
+            sns.set(rc={'figure.figsize':(5,2), "figure.dpi":100}, font_scale=1)
+            sns.set_style("white")
 
             df_plot = pd.DataFrame({
                 'Category': ['Active vs Active'] * len(mean_tanimoto_active_active) + ['Active vs Inactive'] * len(mean_tanimoto_active_inactive),
@@ -266,7 +266,7 @@ for dataset in os.listdir(data_path):
             })
 
             
-            '''pal = "colorblind"
+            pal = "colorblind"
             sns.set_style("white")
 
             ax=pt.half_violinplot(x = 'Mean Tanimoto Distance', y = 'Category', data = df_plot, palette = pal,
@@ -291,7 +291,7 @@ for dataset in os.listdir(data_path):
 
             annotator.configure(test='t-test_ind', text_format='star', loc='outside')
             annotator.apply_and_annotate()
-            '''
+            
 
             # Extract data for both categories
             active_active_values = df_plot[df_plot['Category'] == 'Active vs Active']['Mean Tanimoto Distance']
@@ -304,10 +304,10 @@ for dataset in os.listdir(data_path):
 
             
             #Customize the plot
-            #plt.xlabel("Mean Tanimoto Distance")
-            #plt.ylabel("")
-            #plt.xticks(rotation=0)
-            #plt.show()
+            plt.xlabel("Mean Tanimoto Distance")
+            plt.ylabel("")
+            plt.xticks(rotation=0)
+            plt.show()
             
             
             #CELL PAINTING
@@ -338,16 +338,15 @@ for dataset in os.listdir(data_path):
 
             #print(activity)
 
-            #pal = "Set2"
-            #sns.set(rc={'figure.figsize':(5,2), "figure.dpi":100}, font_scale=1)
-            #sns.set_style("white")
+            pal = "Set2"
+            sns.set(rc={'figure.figsize':(5,2), "figure.dpi":100}, font_scale=1)
+            sns.set_style("white")
 
             df_plot = pd.DataFrame({
                 'Category': ['Active vs Active'] * len(mean_eucledian_active_active) + ['Active vs Inactive'] * len(mean_eucledian_active_inactive),
                 'Mean Eucledian Distance': mean_eucledian_active_active + mean_eucledian_active_inactive
             })
 
-            '''
             pal = "colorblind"
             sns.set_style("white")
 
@@ -374,7 +373,7 @@ for dataset in os.listdir(data_path):
             annotator.configure(test='t-test_ind', text_format='star', loc='outside')
             annotator.apply_and_annotate()
             
-            '''
+            
             
             # Extract data for both categories
             active_active_values = df_plot[df_plot['Category'] == 'Active vs Active']['Mean Eucledian Distance']
@@ -387,28 +386,17 @@ for dataset in os.listdir(data_path):
 
 
             # Customize the plot
-            #plt.xlabel("Mean Eucledian Distance")
-            #plt.ylabel("")
-            #plt.xticks(rotation=0)
-            #plt.show()
+            plt.xlabel("Mean Eucledian Distance")
+            plt.ylabel("")
+            plt.xticks(rotation=0)
+            plt.show()
 
+
+            with open('Plot_comparsions_similarityv2.pkl', 'wb') as f:
+                pickle.dump(results_significance, f)
+            
             # Create a list to hold the rows of the dataframe
-
-
-# Iterate through the dictionary to extract the data
-for task, activities in results_significance.items():
-    for activity, features in activities.items():
-        for featureset, values in features.items():
-            row = {
-                'dataset': dataset,
-                'activity': activity,
-                'featureset': featureset,
-                't-statistic': values['t-statistic'],
-                'p-value': values['p-value']
-            }
-            data.append(row)
-
-# Convert the list of rows to a dataframe
-df = pd.DataFrame(data)
-df.to_csv("Plot_comparsions_similarityv2.csv", index=False)
+            
+            
+        
 
