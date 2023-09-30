@@ -663,3 +663,83 @@ BBBP,p_np,structural,-11.83979681042656,6.48528609132973e-30
 BBBP,p_np,image,-19.604820906032828,3.448511722810885e-70
 sider,Musculoskeletal and connective tissue disorders,structural,-13.727489623874071,1.790780547616166e-40
 sider,Musculoskeletal and connective tissue disorders,image,0.05364671122874564,0.957223821818876
+sider,Nervous system disorders,structural,-35.60359459369646,5.294745741259379e-214
+sider,Nervous system disorders,image,0.15463217738201215,0.8771274193978872
+sider,General disorders and administration site conditions,structural,-34.26912420026056,8.285545764915533e-201
+sider,General disorders and administration site conditions,image,0.1278859211563867,0.8982527864720402
+sider,Skin and subcutaneous tissue disorders,structural,-38.52905931418979,9.782805376845124e-242
+sider,Skin and subcutaneous tissue disorders,image,0.15415468401113078,0.8775037895687721
+sider,Blood and lymphatic system disorders,structural,-13.717449143795928,2.9187987982360427e-40
+sider,Blood and lymphatic system disorders,image,0.12041468852402555,0.9041720336819672
+sider,"Respiratory, thoracic and mediastinal disorders",structural,-18.444021474573262,6.771697240622361e-69
+sider,"Respiratory, thoracic and mediastinal disorders",image,-0.0013578294137033258,0.9989167821490136
+sider,"Congenital, familial and genetic disorders",structural,6.061773048775178,3.0555444940797064e-09
+sider,"Congenital, familial and genetic disorders",image,-0.027776961873023438,0.9778535556157075
+sider,Metabolism and nutrition disorders,structural,-15.955803745861127,4.828687372194577e-53
+sider,Metabolism and nutrition disorders,image,0.10908147621926977,0.9131525156772746
+sider,"Pregnancy, puerperium and perinatal conditions",structural,8.140207490223373,5.532949902542938e-14
+sider,"Pregnancy, puerperium and perinatal conditions",image,-25.102675110532985,1.2372614870745653e-61
+sider,"Injury, poisoning and procedural complications",structural,-13.847356715912646,5.198001706772459e-41
+sider,"Injury, poisoning and procedural complications",image,0.12018267521549883,0.9043553477036581
+sider,Psychiatric disorders,structural,-17.6705305583909,1.1758047827507038e-63
+sider,Psychiatric disorders,image,0.05403218555436759,0.9569166782615484
+sider,Hepatobiliary disorders,structural,-10.514264711113457,8.821125033581612e-25
+sider,Hepatobiliary disorders,image,18.859051245780375,1.413280445214539e-69
+sider,Vascular disorders,structural,-19.473393839600806,4.378319768743691e-76
+sider,Vascular disorders,image,0.09348903995597298,0.9255265741691439
+sider,Cardiac disorders,structural,-17.496667607161353,2.2349684810295696e-62
+sider,Cardiac disorders,image,0.05399449343225906,0.9569469384910405
+sider,Reproductive system and breast disorders,structural,-10.354863947069097,4.4652674835783334e-24
+sider,Reproductive system and breast disorders,image,-0.547591897390979,0.5840793439239607
+sider,Eye disorders,structural,-14.152351851854355,1.712811948595984e-42
+sider,Eye disorders,image,0.004591955389328637,0.9963368430179753
+sider,Gastrointestinal disorders,structural,-33.31879601147051,3.9560850756830204e-192
+sider,Gastrointestinal disorders,image,0.15346662862837918,0.8780465848677795
+sider,Surgical and medical procedures,structural,8.23495317447059,5.077205849593538e-15
+sider,Surgical and medical procedures,image,-0.11231311893970257,0.9106478304940899
+sider,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)",structural,0.6575188719451682,0.5111127638147115
+sider,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)",image,-2.4644986286165835,0.014014397640671654
+sider,Ear and labyrinth disorders,structural,-4.760050095462067,2.2170829203693002e-06
+sider,Ear and labyrinth disorders,image,-3.4649931140437293,0.0005524825658312334
+sider,Infections and infestations,structural,-18.229677106421953,2.992247733140971e-67
+sider,Infections and infestations,image,0.05364851888566759,0.9572223150730864
+sider,Endocrine disorders,structural,0.6513397707493046,0.5151217116177803
+sider,Endocrine disorders,image,-3.483689616706417,0.0005372783349457439
+sider,Investigations,structural,-24.114300830446552,5.497863236616071e-111
+sider,Investigations,image,0.14053797781039554,0.8882513278786428
+sider,Social circumstances,structural,5.827818667058156,1.1948155396938436e-08
+sider,Social circumstances,image,-5.664901165076664,2.8987395390548926e-08
+sider,Renal and urinary disorders,structural,-15.232856951819505,1.2029287141032456e-48
+sider,Renal and urinary disorders,image,-0.001358587111193233,0.9989161954806105
+sider,Immune system disorders,structural,-17.370572541871542,9.246543788466145e-62
+sider,Immune system disorders,image,0.05695739215081661,0.9545866717730846
+tox21,NR-AR,structural,-0.8367203463797679,0.4034157771223985
+tox21,NR-AR,image,-26.447794406372847,2.1958053775976032e-80
+tox21,SR-ARE,structural,6.226523106652715,8.827662435900078e-10
+tox21,SR-ARE,image,22.135183079400115,2.5190376503299785e-80
+tox21,NR-ER-LBD,structural,3.970500071775645,9.25322719824298e-05
+tox21,NR-ER-LBD,image,0.9725416300773381,0.33167139235741816
+tox21,NR-ER,structural,4.950172902795553,9.816505338382802e-07
+tox21,NR-ER,image,-2.519301221148908,0.012035038001038693
+tox21,SR-p53,structural,5.065814900833432,6.40151563005918e-07
+tox21,SR-p53,image,5.278962774449357,2.207431193089672e-07
+tox21,NR-Aromatase,structural,3.1927838412437217,0.0015943109046317977
+tox21,NR-Aromatase,image,5.66509224489371,4.1242688608013895e-08
+tox21,SR-ATAD5,structural,3.486592576061926,0.0006193328584589347
+tox21,SR-ATAD5,image,1.5731686911404383,0.11749631545142177
+tox21,NR-AhR,structural,2.0698652417147296,0.03899931665976579
+tox21,NR-AhR,image,-13.468485445560379,2.667654512480085e-35
+tox21,NR-PPAR-gamma,structural,7.559438100241114,1.0305811961951154e-11
+tox21,NR-PPAR-gamma,image,-7.370084874564975,2.7215989914661372e-11
+tox21,SR-MMP,structural,0.37240265175848025,0.7097305357420517
+tox21,SR-MMP,image,15.11088622157058,1.1228506977113866e-43
+tox21,SR-HSE,structural,4.631110409687456,6.085421960733012e-06
+tox21,SR-HSE,image,-8.189081931376071,1.815654258755836e-14
+tox21,NR-AR-LBD,structural,-0.5462650875812586,0.585447519356705
+tox21,NR-AR-LBD,image,8.762539543421846,5.670403892388379e-16
+HIV,HIV_active,structural,6.628697623063198,7.368908819218306e-09
+HIV,HIV_active,image,-11.190045148951283,6.818930219078135e-17
+DILIst,DILIst Classification ,structural,-9.33545813691884,5.41617762412911e-20
+DILIst,DILIst Classification ,image,-4.142561409822747,3.698629142101673e-05
+clintox,CT_TOX,structural,6.665031545624062,3.448455655313212e-10
+clintox,CT_TOX,image,5.093914413285059,9.153915583531996e-07
